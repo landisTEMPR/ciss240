@@ -1,0 +1,114 @@
+%-*-latex-*-
+\input{thispreamble}
+
+This is a closed-book, no compiler, 5 minute quiz.
+
+%------------------------------------------------------------------------------
+\nextq
+What is the output of the following code fragment?
+The repeating chunk of code appears 10 times; only 3 are shown below.
+\begin{Verbatim}[frame=single,fontsize=\footnotesize]
+int s = 0;
+int i = 0;
+
+if (i % 2 == 1)
+{
+    s = s + i;
+}
+i = i + 1
+
+if (i % 2 == 1)
+{
+    s = s + i;
+}
+i = i + 1
+
+if (i % 2 == 1)
+{
+    s = s + i;
+}
+i = i + 1
+
+... etc ...
+
+std::cout << s << '\n';
+\end{Verbatim}
+\ANSWER
+\begin{answercode}
+
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+Complete the initialization of \verb!i! so that the following program
+prints a random integer in the range of 50 to 60 (inclusive):
+\begin{console}[commandchars=\~\!\@,fontsize=\footnotesize]
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+int main()
+{
+    srand((unsigned int) time(NULL));
+    int i = _________________________;
+    std::cout << i << '\n';
+    return 0;
+}
+\end{console}
+\ANSWER
+\begin{answercode}
+int i =               ;
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+Complete the following program so that it prints a random double in the
+range of -1.0 to 3.0 (inclusive):
+\begin{console}[commandchars=\~\!\@,fontsize=\footnotesize]
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+int main()
+{
+    srand((unsigned int) time(NULL));
+    double x = _________________________;
+    std::cout << x << '\n';
+    return 0;
+}
+\end{console}
+\ANSWER
+\begin{answercode}
+double x =               ;
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+Complete the following program so that it prints a random integer from
+the following: 1, 2, 3, 4, 5, 20, 21, 22, 23, 24.
+\begin{console}[commandchars=\~\!\@,fontsize=\footnotesize]
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+int main()
+{
+    srand((unsigned int) time(NULL));
+    int i = _________________________;
+    // write an if statement
+    std::cout << i << '\n';
+    return 0;
+}
+\end{console}
+\ANSWER
+\begin{answercode}
+int i =       ;
+if ()
+{
+}
+\end{answercode}
+(HINT: Generate a random integer 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 and put it in
+\verb!i!. If \verb!i! is 6, 7, 8, 9, 10, do something to \verb!i!.)
+
+%------------------------------------------------------------------------------
+\input{thispostamble}

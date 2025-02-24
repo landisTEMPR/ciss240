@@ -1,0 +1,43 @@
+%-*-latex-*-
+\input{thispreamble}
+
+This is a closed-book, no compiler, 5 minute quiz.
+
+%------------------------------------------------------------------------------
+\nextq
+The following is part of the bubblesort that sorts values in ascending order. Note that only two passes are executed.
+\begin{console}[fontsize=\footnotesize]
+int x0 = 3, x1 = 5, x2 = 1, x3 = 7, x4 = 0;
+
+// Execute PASS 1 (CODE NOT SHOWN)
+
+// Execute PASS 2 (CODE NOT SHOWN)
+
+std::cout << x0 << ' ' << x1 << ' ' << x2 << ' ' << x3 << ' ' << x4 << '\n';
+\end{console}
+What is the output?
+\\
+\ANSWER
+\begin{answercode}
+
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+Complete the following code segment that performs the bubblesort algorithm on
+three variables \verb!x0!, \verb!x1!, and \verb!x2!
+so that the values in \verb!x0!, \verb!x1!, \verb!x2! are in ascending order.
+\\
+\ANSWER
+\begin{answercode}
+double x0 = 0.0, x1 = 0.0, x2 = 0.0;
+std::cin >> x0 >> x1 >> x2;
+
+// Bubblesort on x0, x1, x2
+double t = 0.0; // variable for temporary storage during swaps
+
+std::cout << x0 << ' ' << x1 << ' ' << x2 << '\n';
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\input{thispostamble}

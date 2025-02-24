@@ -1,0 +1,54 @@
+%-*-latex-*-
+\input{thispreamble}
+
+This is a closed-book, no compiler, 5 minute quiz.
+
+%------------------------------------------------------------------------------
+\nextq
+Note that in the following code fragment,
+the computer has to evaluate two boolean expressions.
+Rewrite it so that only one boolean expression is evaluated.
+The behavior of the program should stay the same.
+\\
+\ANSWER
+\begin{answercode}
+int hours;
+std::cout << "how many hrs do you spend in front of the tv each day?";
+std::cin >> hours;
+
+if (hours > 3)
+{
+    std::cout << "don't have a life, do u?" << std::endl;
+}
+if (hours <= 3)
+{
+    std::cout << "really ..." << std::endl;
+}
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+Complete the following code fragment that computes the area of a
+rectangle when given the integer width and height.
+Here are three test cases:
+\begin{console}[fontsize=\footnotesize,commandchars=\\\{\}]
+\userinput{2 3}
+6
+\end{console}
+\begin{console}[fontsize=\footnotesize,commandchars=\\\{\}]
+\userinput{0 3}
+width and height must be greater than 0
+\end{console}
+\begin{console}[fontsize=\footnotesize,commandchars=\\\{\}]
+\userinput{2 -1}
+width and height must be greater than 0
+\end{console}
+\ANSWER
+\begin{answercode}
+int width, height;
+std::cin >> width >> height;
+
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\input{thispostamble}

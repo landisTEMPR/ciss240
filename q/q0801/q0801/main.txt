@@ -1,0 +1,21 @@
+Q1 [
+int hours;
+std::cout << "how many hours do you spend in front of the tv each day?";
+std::cin >> hours;
+
+if (hours > 3)
+{
+    std::cout << "don't have a life, do u?" << std::endl;
+}
+if (hours <= 3)
+{
+    std::cout << "really ..." << std::endl;
+}
+]
+
+
+Q2 [
+int width, height;
+std::cin >> width >> height;
+
+]

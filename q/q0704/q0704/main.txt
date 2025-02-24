@@ -1,0 +1,8 @@
+Q1 [
+double x0, x1, x2;
+std::cin >> x0 >> x1 >> x2;
+
+// ENTER YOUR ANSWER HERE
+
+std::cout << x0 << ' ' x1 << ' ' << x2 << '\n';
+]

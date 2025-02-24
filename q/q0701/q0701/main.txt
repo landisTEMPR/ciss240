@@ -1,0 +1,4 @@
+Q1 [bool n_is_even =   ;] complete the incomplete statement of the code fragment
+Q2 [] 
+Q3 [] 
+Q4 [bool too_much_telly =   ;] complete the incomplete statement of the code fragment

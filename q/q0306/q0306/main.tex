@@ -1,0 +1,101 @@
+%-*-latex-*-
+\input{thispreamble}
+
+This is a closed-book, no compiler, 5 minute quiz.
+
+%------------------------------------------------------------------------------
+\nextq
+Complete the following code segment so that
+\verb!i! and \verb!j!
+swap their values (you can declare an extra variable):
+\begin{console}[fontsize=\footnotesize]
+int i = 0, j = 1;
+
+// ENTER CODE BELOW
+
+std::cout << i << ' ' << j;
+\end{console}
+i.e. the output of the above code segment must be
+\begin{console}[fontsize=\footnotesize]
+1 0
+\end{console}
+If I change the initial values for \verb!i!, \verb!j! to \verb!1!, \verb!2!,
+the output is \verb!2 1!.
+\\
+\ANSWER
+\begin{answercode}
+t = x0;   
+x0 = x1; 
+x1 = x2; 
+x2 = t;   
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+Complete the following code segment
+\begin{console}[fontsize=\footnotesize]
+int x0 = 0, x1 = 1, x2 = 2;
+int t;
+
+// ENTER CODE BELOW
+
+std::cout << x0 << ' ' << x1 << ' ' << x2 << '\n';
+\end{console}
+so that you get the following output
+\begin{console}[fontsize=\footnotesize]
+1 2 0
+\end{console}
+And if the initial values for
+\verb!x0!,
+\verb!x1!,
+\verb!x2!,
+are
+\verb!3!,
+\verb!4!,
+\verb!5!,
+the output is \verb!4 5 3!.
+Do it in 4 statements.
+\\
+\ANSWER
+\begin{answercode}
+t = x0; 
+x0 = x1; 
+x1 = x2;  
+x2 = t;  
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+Complete the following code segment
+\begin{console}[fontsize=\footnotesize]
+int x0 = 0, x1 = 1, x2 = 2;
+int t;
+
+// ENTER CODE BELOW
+
+std::cout << x0 << ' ' << x1 << ' ' << x2 << '\n';
+\end{console}
+so that your get the following output:
+\begin{console}[fontsize=\footnotesize]
+2 0 1
+\end{console}
+Do it in 4 statements.
+And if the initial values for
+\verb!x0!,
+\verb!x1!,
+\verb!x2!,
+are
+\verb!3!, \verb!4!, \verb!5!,
+the output is
+\texttt{5\ 3\ 4}.
+\\
+\ANSWER
+\begin{answercode}
+t = x2;
+x2 = x1;
+x1 = x0; 
+x0 = t;  
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\input{thispostamble}

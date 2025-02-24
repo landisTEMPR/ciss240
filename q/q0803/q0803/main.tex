@@ -1,0 +1,84 @@
+%-*-latex-*-
+\input{thispreamble}
+
+This is a closed-book, no compiler, 5 minute quiz.
+
+%------------------------------------------------------------------------------
+\nextq
+What is the value of \verb!x! if \verb!i! is 2 and \verb!j! is 3:
+\begin{console}[fontsize=\footnotesize]
+int x = (1 < i && j > 3 ? i + 1 : j + 1);
+\end{console}
+\ANSWER
+\begin{answercode}
+
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+Rewrite the following without if-else.
+(Use ternary operator.)
+\begin{console}[fontsize=\footnotesize]
+if (a < b + c)
+{
+    x = i + j;
+}
+else
+{
+    x = i - j;
+}
+\end{console}
+\ANSWER
+\begin{answercode}
+
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+Rewrite the following code fragment without if-else.
+(Use ternary operators.)
+\ANSWER
+\begin{answercode}
+int die0 = rand() % 6 + 1;
+int die1 = rand() % 6 + 1;
+int gain = 0;
+if (die0 > 2)
+{
+    gain = gain + 1;
+}
+else
+{
+    gain = gain - 1;
+}
+if (die0 == die1)
+{
+    gain = gain + 1;
+}
+else
+{
+    gain = gain - 1;
+}
+if (die0 == 6 && die1 == 6)
+{
+    gain = gain + 2;
+}
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\nextq
+The following code fragment is wrong. Fix it!
+\\
+\ANSWER
+\begin{answercode}
+int die0 = rand() % 6 + 1;
+int die1 = rand() % 6 + 1;
+if (die0 == die1 == 6)
+{
+    std::cout << "double 6!!!\n";
+}
+\end{answercode}
+(Why is it wrong? Initialize both variables to 6 and see what happens. Why?
+Restudy boolean notes if you don't see the error immediately!)
+
+%------------------------------------------------------------------------------
+\input{thispostamble}

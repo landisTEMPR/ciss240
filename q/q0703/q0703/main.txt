@@ -1,0 +1,16 @@
+Q1 [
+? ? ? ? ?
+? ? ? ? ?
+] (replace ?s with numbers)
+
+Q2 [
+double x0 = 0.0, x1 = 0.0, x2 = 0.0;
+std::cin >> x0 >> x1 >> x2;
+
+// Bubblesort on x0, x1, x2
+double t = 0.0; // variable for temporary storage during swaps
+
+// ENTER YOUR ANSWER FOR BUBBLESORT CODE ON x0,x1,x2 HERE
+
+std::cout << x0 << ' ' << x1 << ' ' << x2 << '\n';
+]

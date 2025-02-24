@@ -1,0 +1,145 @@
+%-*-latex-*-
+\input{thispreamble}
+
+This is a closed-book, no compiler, 5 minute quiz.
+
+%------------------------------------------------------------------------------
+\nextq
+Complete the following code fragment
+that tells you an input is even.
+\begin{Verbatim}[frame=single,fontsize=\footnotesize]
+int n;
+std::cin >> n;
+bool n_is_even = __________________________;
+
+if (n_is_even)
+    std::cout << n << " is even\n";
+    \end{Verbatim}
+The following are some executions of the program:
+\\
+\textsc{Test 1}
+\begin{console}[commandchars=\\\{\},fontsize=\small]
+\userinput{6}
+6 is even
+\end{console}
+\textsc{Test 2}
+\begin{console}[commandchars=\\\{\},fontsize=\small]
+\userinput{5}
+\end{console}
+(There is no output.)
+\\
+\ANSWER
+\begin{answercode}
+
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\newpage
+\nextq
+Complete the following code fragment
+so that if the user enters an integer value that is at least 5,
+the program prints a message.
+\begin{console}[commandchars=\\\{\},fontsize=\small]
+int hours;
+std::cout << "how many hrs do you spend in front of the tv each day?";
+std::cin >> hours;
+
+bool too_much_telly = _____________________;
+
+if (too_much_telly)
+    std::cout << "don't have a life, do u?" << std::endl;
+\end{console}
+The following are some executions of the program:
+\\
+\textsc{Test 1}
+\begin{console}[commandchars=\\\{\},fontsize=\small]
+\userinput{5}
+don't have a life, do u?
+\end{console}
+\textsc{Test 2}
+\begin{console}[commandchars=\\\{\},fontsize=\small]
+\userinput{1}
+\end{console}
+(There is no output.)
+\\
+\ANSWER
+\begin{answercode}
+
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\newpage
+\nextq
+What is the output of the following code fragment?
+\begin{Verbatim}[frame=single,fontsize=\footnotesize]
+int n = 7;
+int d = 1;
+bool b = true;
+
+if (n % d == 0)
+{
+    b = !b;
+}
+d = d + 1;
+
+if (n % d == 0)
+{
+    b = !b;
+}
+d = d + 1;
+
+if (n % d == 0)
+{
+    b = !b;
+}
+d = d + 1;
+
+if (n % d == 0)
+{
+    b = !b;
+}
+d = d + 1;
+
+if (n % d == 0)
+{
+    b = !b;
+}
+d = d + 1;
+
+std::cout << b << '\n';
+\end{Verbatim}
+\ANSWER
+\begin{answercode}
+
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\newpage
+\nextq
+What is the output of the following code fragment?
+The repeating chunk of code appears 5 times; only 3 are shown below.
+\begin{Verbatim}[frame=single,fontsize=\footnotesize]
+int n = 7;
+int d = 2;
+bool b = true;
+
+b = b && (n % d != 0);
+d = d + 1;
+
+b = b && (n % d != 0);
+d = d + 1;
+
+b = b && (n % d != 0);
+d = d + 1;
+
+... etc ...
+
+std::cout << b << '\n';
+\end{Verbatim}
+\ANSWER
+\begin{answercode}
+
+\end{answercode}
+
+%------------------------------------------------------------------------------
+\input{thispostamble}
